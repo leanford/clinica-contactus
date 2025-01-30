@@ -1,0 +1,16 @@
+.container-principal {
+    background-color: #ECDFD6;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 180px;
+    width: 300px;
+}
