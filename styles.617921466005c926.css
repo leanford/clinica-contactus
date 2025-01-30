@@ -1,12 +1,12 @@
 html {
     height: 100vh;
-    background-color: #ECDFD6;
+    background-color: #ecdfd6;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 p {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700
 }
