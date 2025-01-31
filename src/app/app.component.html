@@ -1,6 +1,13 @@
-<div class="container-principal">
-    <!-- <img alt="Logo Contactus" class="logo" src="../../assets/imgs/logo-contactus.jpeg" /> -->
-    <img alt="Logo Contactus" class="logo" src="src/assets/imgs/logo-contactus.jpeg" />
+<div class="page-container">
+    <app-header></app-header>
+    <div class="content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
 
-    <p>Clinica Contactus - Em breve</p>
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5585992734914&text=Olá, gostaria de mais informações!"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> <!-- Ícone do FontAwesome -->
+    </a>
 </div>
