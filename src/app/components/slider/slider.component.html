@@ -1,0 +1,12 @@
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide" *ngFor="let professional of professionals">
+            <img [src]="professional.photoUrl" [alt]="professional.name" />
+            <h3>{{ professional.name }}</h3>
+            <p>{{ professional.description }}</p>
+            <button>
+                <p>{{ details }}</p>
+            </button>
+        </div>
+    </div>
+</div>
