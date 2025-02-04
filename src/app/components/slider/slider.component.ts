@@ -15,18 +15,11 @@ export class SliderComponent implements OnInit {
 
   constructor() { }
 
-  professionals: Slider[] = [];
-
   details: string = 'Conheça';
 
   ngOnInit(): void {
-    this.professionals = [
-      { name: 'Ana Silva', description: 'Desenvolvedora Frontend', photoUrl: 'assets/imgs/mulher.jpg'},
-      { name: 'João Souza', description: 'Designer Gráfico', photoUrl: 'assets/imgs/homem.jpg'},
-      { name: 'Mariana Costa', description: 'Gerente de Projetos', photoUrl: 'assets/imgs/mulher.jpg'}
-    ];
   }
   
-  // @Input() professionals: { name: string; description: string; photoUrl: string }[] = [];
+  @Input() dados: { name: string; description: string; photoUrl: string }[] = [];
 
 }

@@ -1,0 +1,30 @@
+.slider-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    gap: 16px;
+    margin: 10px;
+}
+
+.slide {
+    scroll-snap-align: start;
+    min-width: 280px;
+    background: none;
+    border-radius: 12px;
+    text-align: center;
+}
+
+img {
+    max-height: 480px;
+    max-width: 270px;
+    width: 100%;
+    border-radius: 8px;
+}

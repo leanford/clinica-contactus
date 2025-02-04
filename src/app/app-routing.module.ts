@@ -3,14 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { SliderComponent } from './components/slider/slider.component';
+import { ProfissionaisComponent } from './components/profissionais/profissionais.component';
+import { LocalidadeComponent } from './components/localidade/localidade.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'servicos', component: ServicesComponent },
-  { path: 'contato', component: ContactComponent },
-  { path: 'profissionais', component: SliderComponent },
+  { path: 'localidade', component: LocalidadeComponent },
+  { path: 'profissionais', component: ProfissionaisComponent },
   { path: '**', redirectTo: '' }
 ];
 

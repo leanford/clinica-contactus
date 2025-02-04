@@ -6,11 +6,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SliderComponent } from './components/slider/slider.component';
 import { MapComponent } from './components/map/map.component';
 import { CommonModule } from '@angular/common';
+import { LocalidadeComponent } from './components/localidade/localidade.component';
+import { ProfissionaisComponent } from './components/profissionais/profissionais.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     HomeComponent,
     ServicesComponent,
-    ContactComponent,
     SliderComponent,
-    MapComponent
+    MapComponent,
+    LocalidadeComponent,
+    ProfissionaisComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

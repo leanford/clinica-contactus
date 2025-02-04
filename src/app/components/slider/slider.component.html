@@ -1,9 +1,9 @@
 <div class="slider-container">
     <div class="slider">
-        <div class="slide" *ngFor="let professional of professionals">
-            <img [src]="professional.photoUrl" [alt]="professional.name" />
-            <h3>{{ professional.name }}</h3>
-            <p>{{ professional.description }}</p>
+        <div class="slide" *ngFor="let dado of dados">
+            <img [src]="dado.photoUrl" [alt]="dado.name" />
+            <h3>{{ dado.name }}</h3>
+            <p>{{ dado.description }}</p>
             <button>
                 <p>{{ details }}</p>
             </button>
