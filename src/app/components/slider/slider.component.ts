@@ -37,6 +37,6 @@ export class SliderComponent {
     });
   }
 
-  @Input() dados: { name: string; description: string; photoUrl: string }[] = [];
+  @Input() dados: { name: string;  titulo: string; subtitulo: string; photoUrl: string }[] = [];
 
 }

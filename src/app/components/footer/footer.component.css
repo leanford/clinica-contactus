@@ -1,49 +1,56 @@
-/* Estilo básico para o rodapé */
 footer {
     background-color: #627766;
-    /* Cor de fundo escura */
     color: white;
-    /* Cor do texto */
     text-align: center;
-    /* Centraliza o texto */
     padding: 1.5rem 0;
-    /* Espaçamento interno (topo/baixo) */
     font-size: 1rem;
-    /* Tamanho da fonte */
     border-top: 1px solid #627766;
-    /* Borda superior para destaque */
 }
 
-/* Estilo para links no rodapé */
 footer a {
     color: #3fd72b;
-    /* Cor dos links */
     text-decoration: none;
-    /* Remove sublinhado */
     margin: 0 0.5rem;
-    /* Espaçamento entre links */
     transition: color 0.3s ease;
-    /* Transição suave de cor */
 }
 
 footer a:hover {
-    color: #2ca81f;
-    /* Cor dos links ao passar o mouse */
+    color: #C1D2CC;
 }
 
-/* Estilo para dispositivos móveis */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    margin: 0 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a i {
+    font-size: 2rem !important;
+}
+
+.social-links a:hover {
+    color: #C1D2CC;
+    transform: scale(1.5);
+}
+
+
 @media (max-width: 768px) {
     footer {
         padding: 1rem 0;
-        /* Reduz o espaçamento em telas menores */
         font-size: 0.9rem;
-        /* Reduz o tamanho da fonte */
     }
 
     footer a {
         display: block;
-        /* Links em blocos para melhorar a usabilidade */
         margin: 0.5rem 0;
-        /* Espaçamento entre links */
+    }
+
+    .social-links {
+        margin-top: 0.5rem;
     }
 }

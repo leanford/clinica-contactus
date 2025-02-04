@@ -3,10 +3,9 @@
         <div class="slide" *ngFor="let dado of dados">
             <img [src]="dado.photoUrl" [alt]="dado.name" />
             <h3>{{ dado.name }}</h3>
-            <p>{{ dado.description }}</p>
-            <button style="padding: 10px;  border: none; color: white; 
-            border-radius: 8px; 
-            background-color: #929292;">
+            <p>{{ dado.titulo }}</p>
+            <p>{{ dado.subtitulo }}</p>
+            <button class="btn-conhecer">
                 {{ details.toUpperCase() }}
             </button>
         </div>
