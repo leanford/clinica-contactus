@@ -4,8 +4,10 @@
             <img [src]="dado.photoUrl" [alt]="dado.name" />
             <h3>{{ dado.name }}</h3>
             <p>{{ dado.description }}</p>
-            <button>
-                <p>{{ details }}</p>
+            <button style="padding: 10px;  border: none; color: white; 
+            border-radius: 8px; 
+            background-color: #929292;">
+                {{ details.toUpperCase() }}
             </button>
         </div>
     </div>

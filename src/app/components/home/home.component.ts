@@ -8,14 +8,31 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   imagens: { photoUrl: string }[] = [];
-  quantidadeImagens: number = 6;  // Número de imagens
+  quantidadeImagens: number = 4;  // Número de imagens
 
-  ngOnInit(): void {
-    // Usando um loop para gerar os caminhos das imagens dinamicamente
+
+  async ngOnInit() {
+    await this.carregarImagens(); // Chama a função no ciclo de vida do Angular
+  }
+
+  async carregarImagens() {
     for (let i = 1; i <= this.quantidadeImagens; i++) {
-      const nomeImagem = `${i}.jpeg`; // Supondo que as imagens sejam '1.jpeg', '2.jpeg', '3.jpeg', etc.
-      this.imagens.push({ photoUrl: `src/assets/imgs/imgs-clinica/${nomeImagem}` });
+      const nomeImagem = `${i}.jpeg`;
+      const urlPrimaria = `assets/imgs/imgs-clinica/${nomeImagem}`;
+      const urlSecundaria = `src/assets/imgs/imgs-clinica/${nomeImagem}`;
+
+      const urlFinal = await this.verificarImagem(urlPrimaria) ? urlPrimaria : urlSecundaria;
+      this.imagens.push({ photoUrl: urlFinal });
     }
+  }
+
+  verificarImagem(url: string): Promise<boolean> {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload = () => resolve(true);
+      img.onerror = () => resolve(false);
+      img.src = url;
+    });
   }
 
   title: string = 'Quem Somos';

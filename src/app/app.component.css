@@ -1,66 +1,55 @@
-/* Container principal da página */
 .page-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Ocupa pelo menos a altura total da viewport */
+    /* background: linear-gradient(to bottom,
+            #ECDFD6 0%,
+            #ECDFD6 14%,
+            white 20%,
+            white 70%,
+            #627766 90%,
+            #627766 100%); */
+
+            /* background-image: url('/assets/imgs/logo-sem-texto.png');
+            background-size: 300px 300px;
+            background-position: 50px 100px; 
+            background-repeat: no-repeat;  */
 }
 
-/* Container do conteúdo */
 .content-wrapper {
     flex: 1;
-    /* Faz o conteúdo ocupar o espaço restante */
     margin: 20px;
 }
 
-/* Estilo do botão flutuante do WhatsApp */
 .whatsapp-float {
     position: fixed;
-    /* Fixa o botão na tela */
-    bottom: 25%;
-    /* Distância do fundo da tela */
+    bottom: 20%;
     right: 20px;
-    /* Distância da direita da tela */
     background-color: #25d366;
-    /* Cor verde do WhatsApp */
     color: white;
-    /* Cor do ícone */
     border-radius: 50%;
-    /* Deixa o botão redondo */
     width: 70px;
-    /* Largura do botão */
     height: 70px;
-    /* Altura do botão */
     text-align: center;
-    /* Centraliza o ícone */
     font-size: 30px;
-    /* Tamanho do ícone */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para destacar */
     z-index: 1000;
-    /* Garante que o botão fique acima de outros elementos */
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    /* Remove sublinhado do link */
     transition: background-color 0.3s ease;
-    /* Transição suave de cor */
 }
 
-/* Efeito ao passar o mouse */
 .whatsapp-float:hover {
     background-color: #128c7e;
-    /* Cor mais escura ao passar o mouse */
 }
 
-/* Estilo para dispositivos móveis */
 @media (max-width: 768px) {
     .whatsapp-float {
         width: 60px;
         height: 60px;
         font-size: 25px;
-        /* bottom: 15px; */
         right: 15px;
     }
 }
