@@ -1,1 +1,12 @@
 @import "~leaflet/dist/leaflet.css";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 100 !important; */
+    font-size: 17px !important;
+}
+
+h2 {
+    font-size: 30px !important;
+    /* font-style: italic; */
+}
