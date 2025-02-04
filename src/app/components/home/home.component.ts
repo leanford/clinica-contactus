@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     // Usando um loop para gerar os caminhos das imagens dinamicamente
     for (let i = 1; i <= this.quantidadeImagens; i++) {
       const nomeImagem = `${i}.jpeg`; // Supondo que as imagens sejam '1.jpeg', '2.jpeg', '3.jpeg', etc.
-      this.imagens.push({ photoUrl: `assets/imgs/imgs-clinica/${nomeImagem}` });
+      this.imagens.push({ photoUrl: `src/assets/imgs/imgs-clinica/${nomeImagem}` });
     }
   }
 
