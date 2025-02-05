@@ -1,11 +1,7 @@
-<nav class="navbar navbar-expand-lg custom-navbar">
+<nav class="navbar navbar-expand-lg custom-navbar" *ngIf="isMobile; else desktopNavbar">
     <a class="navbar-brand" routerLink="/">
         <img src="assets/imgs/logo-contactus-sem-fundo.png" alt="Contactus Logo" class="navbar-logo"
             onerror="this.onerror=null; this.src='src/assets/imgs/logo-contactus-sem-fundo.png';" />
-
-        <!-- <img src="assets/imgs/logo-contactus-sem-fundo.png" alt="Contactus Logo" class="navbar-logo" /> -->
-        <!-- <img src="src/assets/imgs/logo-contactus-sem-fundo.png" alt="Contactus Logo" class="navbar-logo" /> -->
-        <!-- <span>Clínica Contactus</span> -->
     </a>
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,3 +26,27 @@
         </ul>
     </div>
 </nav>
+
+<ng-template #desktopNavbar>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <a class="navbar-brand" href="#">
+            <img src="assets/imgs/logo-contactus-sem-fundo.png" alt="Contactus Logo" class="navbar-logo" />
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="onMenuClick('quem-somos')">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="onMenuClick('profissionais')">Nossos Especialistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="onMenuClick('servicos')">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="onMenuClick('localidade')">Onde Nos Encontrar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</ng-template>

@@ -1,8 +1,35 @@
+<app-header (navigateToSection)="scrollToSection($event)"></app-header>
 <div class="page-container">
-    <app-header></app-header>
     <div class="content-wrapper">
-        <router-outlet></router-outlet>
+
+        <div class="container">
+            <div style="padding-top: 160px;" id="quem-somos">
+                <app-home></app-home>
+            </div>
+
+            <div id="profissionais">
+                <app-profissionais></app-profissionais>
+            </div>
+
+            <div id="servicos">
+                <app-services></app-services>
+            </div>
+
+            <div id="localidade">
+                <app-localidade></app-localidade>
+            </div>
+        </div>
+
+        <!-- <nav *ngIf="isMobile; else desktopNavbar">
+            <router-outlet></router-outlet>
+        </nav>
+
+        <ng-template #desktopNavbar>
+         
+        </ng-template> -->
+
     </div>
+
     <app-footer></app-footer>
 
     <a href="https://api.whatsapp.com/send?phone=5585992734914&text=Olá, gostaria de mais informações!"

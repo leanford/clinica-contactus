@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isNavbarOpen = false; // Estado do menu (aberto/fechado)
+  isNavbarOpen = false;
 
-  // Função para alternar o estado do menu
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
+
+  @Output() navigateToSection = new EventEmitter<string>();
+
+  onMenuClick(sectionId: string) {
+    this.navigateToSection.emit(sectionId);
+  }
+
+  isMobile: boolean = window.innerWidth <= 768;
+
+  @HostListener('window:resize')
+  onResize() {
+    this.isMobile = window.innerWidth <= 768;
+    console.log('Is Mobile:', this.isMobile);
+  }
+
 }
