@@ -18,11 +18,11 @@ export class HeaderComponent {
     this.navigateToSection.emit(sectionId);
   }
 
-  isMobile: boolean = window.innerWidth <= 768;
+  isMobile: boolean = window.innerWidth <= 1110;
 
   @HostListener('window:resize')
   onResize() {
-    this.isMobile = window.innerWidth <= 768;
+    this.isMobile = window.innerWidth <= 1110;
     console.log('Is Mobile:', this.isMobile);
   }
 

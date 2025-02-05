@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { LocalidadeComponent } from './components/localidade/localidade.component';
 import { ProfissionaisComponent } from './components/profissionais/profissionais.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

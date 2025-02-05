@@ -1,9 +1,11 @@
-.custom-navbar {
+.navbar {
     background-color: #ECDFD6;
-    padding: 1rem 1.5rem;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    /* border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px; */
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
 }
 
 .navbar-brand {
@@ -11,41 +13,89 @@
     align-items: center;
     font-weight: bold;
     font-size: 1.25rem;
-    color: #627766;;
+    color: #627766;
     text-decoration: none;
 }
 
 .navbar-logo {
-    width: 270px;
-    height: 110px;
-    /* object-fit: cover; */
-    /* border-radius: 50%; */
+    width: 220px;
+    height: 75px;
     margin-right: 10px;
 }
 
-.navbar-nav .nav-item .nav-link {
-    color: #627766;;
-    font-weight: 500;
-    margin-right: 1rem;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-item .nav-link:hover,
-.navbar-nav .nav-item .nav-link.active {
-    color: #1a4e45;
-}
-
 .navbar-toggler {
+    display: none;
     border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 25px;
+    height: 25px;
 }
 
-/* @media (max-width: 768px) {
-    .navbar-brand span {
-        display: none;
+.navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #627766;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #1a4e45;
+}
+
+@media (max-width: 1000px) {
+    .navbar-toggler {
+        display: block;
     }
-} */
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #ECDFD6;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.open {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .navbar {
+        padding: 0 50px;
+    }
+}
