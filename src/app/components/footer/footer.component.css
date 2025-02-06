@@ -1,14 +1,18 @@
+* {
+    color: white !important;
+}
+
 footer {
-    background-color: #627766;
-    color: white;
+    background-color: #4C6661;
+    color: white !important;
     text-align: center;
     padding: 1.5rem 0;
     font-size: 1rem;
-    border-top: 1px solid #627766;
+    border-top: 1px solid #4C6661;
 }
 
 footer a {
-    color: #3fd72b;
+    color: #3fd72b !important;
     text-decoration: none;
     margin: 0 0.5rem;
     transition: color 0.3s ease;
@@ -24,20 +28,23 @@ footer a:hover {
 
 .social-links a {
     display: inline-block;
-    color: white;
+    color: white !important;
     margin: 0 1rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a i {
+    display: inline-block;
+    color: rgb(255, 255, 255) !important;
     font-size: 2rem !important;
+    margin: 0 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #C1D2CC;
+.social-links a:hover i {
     transform: scale(1.5);
+    color: #139e6e !important;
 }
-
 
 @media (max-width: 768px) {
     footer {

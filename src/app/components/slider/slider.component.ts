@@ -9,8 +9,6 @@ export class SliderComponent {
 
   constructor() { }
 
-  details: string = 'Conheça';
-
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['dados']) {
       this.dados.forEach(async (item) => {

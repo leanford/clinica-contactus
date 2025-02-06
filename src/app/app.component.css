@@ -1,23 +1,7 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    /* margin-top: 200px; */
-    /* min-height: 100vh; */
-    
-    /* position: absolute;
-    top: 200px; */
-    /* background: linear-gradient(to bottom,
-            #ECDFD6 0%,
-            #ECDFD6 14%,
-            white 20%,
-            white 70%,
-            #627766 90%,
-            #627766 100%); */
-
-    /* background-image: url('/assets/imgs/logo-sem-texto.png');
-            background-size: 300px 300px;
-            background-position: 50px 100px; 
-            background-repeat: no-repeat;  */
+    background-color: #E8E0D6;
 }
 
 .container {
@@ -35,11 +19,9 @@ app-header {
     z-index: 10000 !important;
     box-shadow: 0 4px 2px -2px gray !important;
     margin-bottom: 5px !important;
-    /* border-radius: 20px !important; */
 }
 
 .content-wrapper {
-    /* padding-top: 150px !important; */
     flex: 1;
     margin: 20px;
 }

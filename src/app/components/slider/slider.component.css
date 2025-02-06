@@ -20,7 +20,7 @@
     scroll-snap-align: start;
     min-width: 230px;
     max-width: 300px;
-    background: #f9f9f9;
+    background: #c1d2cc89;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -41,5 +41,5 @@ img {
     border: none;
     color: white;
     border-radius: 8px;
-    background-color: #929292;
+    background-color: #4C6661;
 }

@@ -1,3 +1,13 @@
 <h2>Nossos Serviços</h2>
 
-<p>EM DESENVOLVIMENTO</p>
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide" *ngFor="let dado of dados">
+            <img [src]="dado.photoUrl" [alt]="dado.titulo" />
+            <h3>{{ dado.titulo }}</h3>
+            <button class="btn-conhecer">
+                Saiba mais
+            </button>
+        </div>
+    </div>
+</div>
