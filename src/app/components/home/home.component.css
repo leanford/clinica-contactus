@@ -11,3 +11,109 @@ p {
     font-size: 1.25rem;
     color: #666;
 }
+
+
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    min-height: 340px !important;
+    min-width: 300px !important;
+
+    max-height: 380px !important;
+    max-width: 320px !important;
+
+    background: #c1d2cc89;
+    /* padding: 10px; */
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    padding: 10px;
+}
+
+.slide {
+    scroll-snap-align: start;
+    min-width: 280px;
+    background: none;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+img {
+    max-height: 360px !important;
+    max-width: 250px !important;
+    border-radius: 8px;
+}
+
+
+.nosso-objetivo {
+    position: relative;
+    background-color: #c1d2cc89; /* Verde claro */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .nosso-objetivo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('src/assets/imgs/alvo-branco.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4; /* Ajuste a opacidade da imagem */
+    pointer-events: none;
+    border-radius: 15px;
+    z-index: 0;
+  }
+  
+  .nosso-objetivo * {
+    position: relative;
+    z-index: 1;
+  }
+  
+
+/* @media (max-width: 768px) {
+    .nosso-objetivo {
+      background-size: 120px 120px; 
+    }
+  }
+   */
+
+@media (max-width: 760px) {
+    .naoApareceCelularPequeno {
+        display: none;
+    }
+}
+
+@media (min-width: 761px) {
+    .apareceCelularGrande {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .naoApareceCelular {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .naoApareceComputador {
+        display: none;
+    }
+}

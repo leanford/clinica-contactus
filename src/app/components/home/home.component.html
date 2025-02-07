@@ -1,35 +1,94 @@
-<h2>{{ title }}</h2>
 <!-- <p>{{ description }}</p> -->
-<p>
-    Fundada por três psicólogos apaixonados pela profissão, a Contactus nasceu da crença no poder transformador da
-    psicologia para promover qualidade de vida e bem-estar. Nosso trabalho é guiado pelas normas éticas da profissão
-    e pelo conhecimento científico mais atualizado, aliado a recursos personalizados e de alta qualidade.
-</p>
 
-<h2> Nossa clínica </h2>
+<div style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 15px;">
+
+    <div>
+        <div class="quem-somos">
+
+            <h2>{{ title }}</h2>
+
+            <p>
+                Fundada por três psicólogos apaixonados pela profissão, a Contactus nasceu da crença no poder
+                transformador
+                da
+                psicologia para promover qualidade de vida e bem-estar. Nosso trabalho é guiado pelas normas éticas da
+                profissão
+                e pelo conhecimento científico mais atualizado, aliado a recursos personalizados e de alta qualidade.
+            </p>
+        </div>
+
+        <div class="nossa-clinica naoApareceCelular">
+
+            <h2> Nossa clínica </h2>
+
+            <p style="margin-top: 20px;">
+                Pensando sempre no seu bem-estar, contamos com um ambiente climatizado e cuidadosamente planejado para
+                oferecer
+                conforto e tranquilidade a você e sua família. Nosso espaço é moderno, aconchegante e inclui um ambiente
+                infantil
+                acolhedor, onde as crianças podem se divertir enquanto aguardam o atendimento.
+            </p>
+
+            <p>
+                Esperamos recebê-lo com todo o carinho e profissionalismo que você merece. Venha nos visitar!
+                <!-- <a href="/localidade">Venha nos visitar! </a> -->
+            </p>
+        </div>
+
+    </div>
+
+    <div class="slider-container naoApareceCelularPequeno">
+        <div class="slider">
+            <div class="slide">
+                <img [src]="'src/assets/imgs/quem-somos.jpeg'" [alt]="'Foto da clinica'" />
+                <!-- <img [src]="'assets/imgs/quem-somos.jpeg'" [alt]="'Foto da clinica'" /> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="slider-container apareceCelularGrande">
+    <div class="slider">
+        <div class="slide">
+            <!-- <img [src]="'assets/imgs/quem-somos.jpeg'" [alt]="'Foto da clinica'" /> -->
+            <img [src]="'src/assets/imgs/quem-somos.jpeg'" [alt]="'Foto da clinica'" />
+        </div>
+    </div>
+</div>
+
+<div class="nossa-clinica naoApareceComputador">
+
+    <h2> Nossa clínica </h2>
+
+    <p style="margin-top: 20px;">
+        Pensando sempre no seu bem-estar, contamos com um ambiente climatizado e cuidadosamente planejado para
+        oferecer
+        conforto e tranquilidade a você e sua família. Nosso espaço é moderno, aconchegante e inclui um ambiente
+        infantil
+        acolhedor, onde as crianças podem se divertir enquanto aguardam o atendimento.
+    </p>
+
+    <p>
+        Esperamos recebê-lo com todo o carinho e profissionalismo que você merece. Venha nos visitar!
+        <!-- <a href="/localidade">Venha nos visitar! </a> -->
+    </p>
+
+</div>
 
 <app-galeria [urls]="imagens"></app-galeria>
 
-<p style="margin-top: 20px;">
-    Pensando sempre no seu bem-estar, contamos com um ambiente climatizado e cuidadosamente planejado para oferecer
-    conforto e tranquilidade a você e sua família. Nosso espaço é moderno, aconchegante e inclui um ambiente infantil
-    acolhedor, onde as crianças podem se divertir enquanto aguardam o atendimento.
-</p>
+<div class="nosso-objetivo">
+    <h2 style="margin-top: 10px;"> Nosso objetivo </h2>
 
-<p>
-    Esperamos recebê-lo com todo o carinho e profissionalismo que você merece. Venha nos visitar!
-    <!-- <a href="/localidade">Venha nos visitar! </a> -->
-</p>
+    <p>
+        Na Contactus, o foco está no acolhimento das dificuldades de cada paciente, oferecendo um espaço seguro e
+        empático para o desenvolvimento pessoal. Acreditamos no trabalho conjunto, onde paciente e terapeuta caminham
+        lado a lado em busca de resultados concretos e relevantes, sempre apresentados de forma clara e transparente.
+    </p>
 
-<h2 style="margin-top: 10px;"> Nosso objetivo </h2>
-
-<p>
-    Na Contactus, o foco está no acolhimento das dificuldades de cada paciente, oferecendo um espaço seguro e
-    empático para o desenvolvimento pessoal. Acreditamos no trabalho conjunto, onde paciente e terapeuta caminham
-    lado a lado em busca de resultados concretos e relevantes, sempre apresentados de forma clara e transparente.
-</p>
-
-<p>
-    Seja para superar desafios emocionais, desenvolver autoconhecimento, alcançar uma vida mais equilibrada ou
-    identificar um diagnóstico preciso, estamos aqui para ajudar você.
-</p>
+    <p>
+        Seja para superar desafios emocionais, desenvolver autoconhecimento, alcançar uma vida mais equilibrada ou
+        identificar um diagnóstico preciso, estamos aqui para ajudar você.
+    </p>
+</div>

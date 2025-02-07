@@ -10,9 +10,13 @@ export class HomeComponent implements OnInit {
   imagens: { photoUrl: string }[] = [];
   quantidadeImagens: number = 4;  // Número de imagens
 
+  imagemQuemSomosNos: { photoUrl: string }[] = [];
+
 
   async ngOnInit() {
     await this.carregarImagens(); // Chama a função no ciclo de vida do Angular
+
+    this.imagemQuemSomosNos.push({ photoUrl: 'assets/imgs/quem-somos.jpeg' });
   }
 
   async carregarImagens() {

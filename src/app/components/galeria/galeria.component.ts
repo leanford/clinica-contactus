@@ -7,6 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class GaleriaComponent {
 
-  @Input() urls: {photoUrl: string }[] = [];
+  // imagemQuemSomosNos: { photoUrl: string }[] = [];
+
+  // ngOnInit() {
+  //   this.imagemQuemSomosNos.push({ photoUrl: 'assets/imgs/quem-somos.jpeg' });
+  // }
+
+  @Input() urls: { photoUrl: string }[] = [];
 
 }

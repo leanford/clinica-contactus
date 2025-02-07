@@ -2,6 +2,12 @@
     color: white !important;
 }
 
+.footer-logo {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 5px;
+}
+
 footer {
     background-color: #4C6661;
     color: white !important;
