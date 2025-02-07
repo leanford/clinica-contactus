@@ -60,6 +60,8 @@
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s;
+    color: #1a4e45 !important;
+
 }
 
 .nav-link:hover,
