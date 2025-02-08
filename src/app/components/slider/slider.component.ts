@@ -9,6 +9,25 @@ export class SliderComponent {
 
   constructor() { }
 
+  isModalOpen = false;
+  selectedDado: any = null;
+
+  openModal(dado: any) {
+    console.log('clicado')
+    console.log(dado)
+    console.log(this.isModalOpen)
+
+    this.selectedDado = dado;
+    this.isModalOpen = true;
+    console.log(this.isModalOpen)
+  }
+
+  closeModal() {
+    console.log('Fechando modal');
+    this.isModalOpen = false;
+    this.selectedDado = null;
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['dados']) {
       this.dados.forEach(async (item) => {
@@ -35,6 +54,6 @@ export class SliderComponent {
     });
   }
 
-  @Input() dados: { name: string;  titulo: string; subtitulo: string; photoUrl: string }[] = [];
+  @Input() dados: { name: string; titulo: string; subtitulo: string; photoUrl: string }[] = [];
 
 }

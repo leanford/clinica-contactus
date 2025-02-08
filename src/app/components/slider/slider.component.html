@@ -1,13 +1,17 @@
 <div class="slider-container">
     <div class="slider">
-        <div class="slide" *ngFor="let dado of dados">
-            <img [src]="dado.photoUrl" [alt]="dado.name" />
-            <h3>{{ dado.name }}</h3>
-            <p>{{ dado.titulo }}</p>
-            <p>{{ dado.subtitulo }}</p>
-            <button class="btn-conhecer">
-                Conheça
-            </button>
-        </div>
+      <div class="slide" *ngFor="let dado of dados">
+        <img [src]="dado.photoUrl" [alt]="dado.name" />
+        <h3>{{ dado.name }}</h3>
+        <p>{{ dado.titulo }}</p>
+        <p>{{ dado.subtitulo }}</p>
+        <button class="btn-conhecer" (click)="openModal(dado)">
+          Conheça
+        </button>
+      </div>
     </div>
-</div>
+  </div>
+  
+  <!-- Modal -->
+    
+  <app-modal-detalhes [isModalOpen]="isModalOpen" [data]="selectedDado" (closed)="closeModal()"></app-modal-detalhes>

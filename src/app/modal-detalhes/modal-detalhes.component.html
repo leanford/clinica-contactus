@@ -1,0 +1,11 @@
+<div class="modal-overlay" [class.active]="isModalOpen" (click)="close()">
+    <div class="modal-content-fundo">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+            <span class="close-modal" (click)="close()">&times;</span>
+            <img [src]="data?.photoUrl" [alt]="data?.name" />
+            <h2 style="text-align: center;">{{ data?.name }}</h2>
+            <p>{{ data?.titulo }}</p>
+            <p>{{ data?.subtitulo }}</p>
+        </div>
+    </div>
+</div>

@@ -22,6 +22,7 @@ footer a {
     text-decoration: none;
     margin: 0 0.5rem;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 footer a:hover {
@@ -43,7 +44,7 @@ footer a:hover {
     display: inline-block;
     color: rgb(255, 255, 255) !important;
     font-size: 2rem !important;
-    margin: 0 1rem;
+    margin-bottom: 20px !important;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 

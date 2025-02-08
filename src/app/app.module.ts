@@ -15,6 +15,7 @@ import { ProfissionaisComponent } from './components/profissionais/profissionais
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FaqDropdownComponent } from './components/faq-dropdown/faq-dropdown.component';
+import { ModalDetalhesComponent } from './modal-detalhes/modal-detalhes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FaqDropdownComponent } from './components/faq-dropdown/faq-dropdown.com
     LocalidadeComponent,
     ProfissionaisComponent,
     GaleriaComponent,
-    FaqDropdownComponent
+    FaqDropdownComponent,
+    ModalDetalhesComponent
   ],
   imports: [
     BrowserModule,
