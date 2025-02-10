@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { HomeComponent } from './components/home/home.component';
-import { ServicesComponent } from './components/services/services.component';
-import { ProfissionaisComponent } from './components/profissionais/profissionais.component';
-import { LocalidadeComponent } from './components/localidade/localidade.component';
+
+// const routes: Routes = [
+//   { path: '', component: HomeComponent },
+//   { path: '**', redirectTo: '' }
+// ];
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'servicos', component: ServicesComponent },
-  { path: 'localidade', component: LocalidadeComponent },
-  { path: 'profissionais', component: ProfissionaisComponent },
-  { path: '**', redirectTo: '' }
+  { path: '', redirectTo: 'clinica-contactus-web', pathMatch: 'full' },
+  { path: 'clinica-contactus-web', component: HomeComponent },
+  { path: '**', redirectTo: 'clinica-contactus-web' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
