@@ -4,10 +4,10 @@
     background-color: #E8E0D6;
 }
 
-.container {
+.container-principal {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 app-header {
@@ -23,7 +23,7 @@ app-header {
 
 .content-wrapper {
     flex: 1;
-    margin: 20px;
+    margin: 30px;
 }
 
 .whatsapp-float {
