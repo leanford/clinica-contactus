@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --prod --base-href /clinica-contactus-web/ && npx angular-cli-ghpages --dir=dist/clinica-contactus-web"
+    "deploy": "ng build --configuration production --base-href /clinica-contactus-web/ && npx angular-cli-ghpages --dir=dist/clinica-contactus-web"
+
   },
   "private": true,
   "dependencies": {
