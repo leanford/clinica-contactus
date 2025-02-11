@@ -13,17 +13,12 @@ export class SliderComponent {
   selectedDado: any = null;
 
   openModal(dado: any) {
-    console.log('clicado')
-    console.log(dado)
-    console.log(this.isModalOpen)
 
     this.selectedDado = dado;
     this.isModalOpen = true;
-    console.log(this.isModalOpen)
   }
 
   closeModal() {
-    console.log('Fechando modal');
     this.isModalOpen = false;
     this.selectedDado = null;
   }

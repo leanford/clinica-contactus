@@ -26,7 +26,6 @@ export class HeaderComponent {
   @HostListener('window:resize')
   onResize() {
     this.isMobile = window.innerWidth <= 1110;
-    console.log('Is Mobile:', this.isMobile);
   }
 
   // Detecta cliques fora do menu para fechá-lo
