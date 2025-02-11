@@ -39,9 +39,9 @@ export class ServicesComponent implements OnInit {
   }
 
   dados = [
-    { titulo: 'Psicoterapia', photoUrl: 'src/assets/imgs/psicoterapia.png' },
-    { titulo: 'Terapia ABA', photoUrl: 'src/assets/imgs/aba.png' },
-    { titulo: 'Avaliação Neuropsicológica', photoUrl: 'src/assets/imgs/neuropsicologia.png' },
-    { titulo: 'Avaliação Psicológica para Cirurgias', photoUrl: 'src/assets/imgs/av-cirurgias.png' }
+    { titulo: 'Psicoterapia', photoUrl: 'assets/imgs/psicoterapia.png' },
+    { titulo: 'Terapia ABA', photoUrl: 'assets/imgs/aba.png' },
+    { titulo: 'Avaliação Neuropsicológica', photoUrl: 'assets/imgs/neuropsicologia.png' },
+    { titulo: 'Avaliação Psicológica para Cirurgias', photoUrl: 'assets/imgs/av-cirurgias.png' }
   ];
 }

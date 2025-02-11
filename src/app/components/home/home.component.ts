@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
 
   async ngOnInit() {
-    await this.carregarImagens(); // Chama a função no ciclo de vida do Angular
+    await this.carregarImagens(); 
 
     this.imagemQuemSomosNos.push({ photoUrl: 'assets/imgs/quem-somos.jpeg' });
   }
