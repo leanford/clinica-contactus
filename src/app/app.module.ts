@@ -17,6 +17,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { FaqDropdownComponent } from './components/faq-dropdown/faq-dropdown.component';
 import { ModalDetalhesComponent } from './modal-detalhes/modal-detalhes.component';
 
+import { LightboxModule } from 'ngx-lightbox';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,8 @@ import { ModalDetalhesComponent } from './modal-detalhes/modal-detalhes.componen
     AppRoutingModule,
     ReactiveFormsModule,
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
