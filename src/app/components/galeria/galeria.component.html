@@ -4,14 +4,12 @@
             <img [src]="url.photoUrl" [alt]="'Foto da clinica'" (click)="openLightbox(i)" />
         </div>
     </div>
-    <!-- Botões de Navegação -->
+    
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <!-- Paginação -->
     <div class="swiper-pagination"></div>
 </div>
 
-<!-- Modal Personalizado -->
 <div class="modal" *ngIf="isModalOpen" (click)="closeImage()">
     <div class="modal-content">
         <img [src]="selectedImage" [alt]="'Imagem ampliada'" />

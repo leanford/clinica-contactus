@@ -1,32 +1,28 @@
-/* Container do Swiper */
 .swiper-container {
     width: 100%;
-    max-width: 1200px; /* Largura máxima do slider */
-    margin: 0 auto; /* Centraliza o slider na página */
-    padding: 20px 0; /* Espaçamento vertical */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
     position: relative;
-    overflow: hidden; /* Esconde as imagens fora de exibição */
+    overflow: hidden;
 }
 
-/* Container das Imagens */
 .swiper-wrapper {
     display: flex;
-    align-items: center; /* Centraliza os slides verticalmente */
+    align-items: center;
 }
 
-/* Estilo de cada Slide */
 .swiper-slide {
 
     flex: 0 0 auto;
-    width: 280px; /* Largura fixa para cada slide */
-    margin-right: 16px; /* Espaçamento entre os slides */
+    width: 280px;
+    margin-right: 16px;
     display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-    transition: transform 0.3s ease; /* Adiciona transição suave */
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-/* Estilo das Imagens */
 .swiper-slide img {
     max-height: 480px;
     max-width: 270px;
@@ -35,13 +31,11 @@
     cursor: pointer;
 }
 
-/* Botões de Navegação */
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* background: rgba(0, 0, 0, 0.5); */
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
@@ -63,7 +57,6 @@
     left: 10px;
 }
 
-/* Paginação */
 .swiper-pagination {
     position: absolute;
     bottom: 10px;
@@ -72,7 +65,6 @@
     z-index: 10;
 }
 
-/* Estilos do Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -89,15 +81,9 @@
 
 .modal-content {
     background: rgba(255, 255, 255, 0);
-
     border: none;
-
     padding: 20px;
     border-radius: 8px;
-
-    /* max-width: 40%;
-    max-height: 90vh; */
-
     text-align: center;
     display: flex;
     justify-content: center;
@@ -110,24 +96,23 @@
     border-radius: 8px;
 }
 
-/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     .swiper-slide {
-        width: 200px; /* Largura menor para dispositivos móveis */
+        width: 200px;
     }
 
     .swiper-slide img {
-        max-height: 300px; /* Altura menor para dispositivos móveis */
+        max-height: 300px;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
         width: 30px;
         height: 30px;
-        font-size: 14px; /* Tamanho menor para dispositivos móveis */
+        font-size: 14px;
     }
 
     .swiper-pagination {
-        bottom: 5px; /* Posição ajustada para dispositivos móveis */
+        bottom: 5px;
     }
 }

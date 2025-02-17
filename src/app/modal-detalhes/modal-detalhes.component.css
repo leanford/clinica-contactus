@@ -29,13 +29,13 @@
     justify-content: center;
     align-items: center;
     background-color: #c1d2cc89;
-    padding: 10px;
     border-radius: 8px;
     overflow-y: auto;
-    
     position: relative;
     transform: scale(0.8);
-    transition: transform 0.3s ease;
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    padding: 20px;
 }
 
 .modal-content-fundo {
@@ -45,30 +45,41 @@
     align-items: center;
     background-color: white;
     border-radius: 8px;
-    max-width: 90%;
+    max-height: 95vh;
+    max-width: 90vw;
     overflow-y: auto;
     position: relative;
-    /* transform: scale(0.8); */
-    /* transition: transform 0.5s ease; */
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1.2s ease, opacity 1.2s ease;
 }
 
-.modal-overlay.active .modal-content {
+.modal-overlay.active .modal-content,
+.modal-overlay.active .modal-content-fundo {
     transform: scale(1);
+    opacity: 1;
 }
 
 .close-modal {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0 8px;
+    font-size: 20px !important;
+    border-radius: 100%;
     cursor: pointer;
 }
 
 .modal-content img {
     max-width: 250px;
-    /* Garante que a imagem não ultrapasse a largura do modal */
-    max-height: 350px;
-    /* Mantém a proporção da imagem */
+    max-height: 300px;
     border-radius: 8px;
-    /* Adiciona bordas arredondadas à imagem */
 }
+
+/* @media (min-width: 500px) {
+    .modal-content {
+       padding-top: 200px !important;
+    }
+} */
